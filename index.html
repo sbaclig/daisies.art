@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(214, 169, 255);
+}
+
+a {
+  margin-left:50px ;
+  margin-right: 50px;
+  display: inline-block;
+  margin-bottom:50px ;
+}
+
+p {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 42px;
+}
+
+h6 {
+  text-align: center;
+}
+</style>
+
+<!-- Instagram badge styles: -->
+<style>.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }
+  </style>
+
+</head>
+<body>
+  <img src="clearerbanner.jpg"/ style="width: 100%">
+  <a href="http://instagram.com/daisies.art?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
+  <span> credits to: @jaejaelyn for making our banner! </span>
+  <h1 style="
+  font-family: fantasy;
+  text-align: center;
+  font-size: 75px;
+  ">Our artists at Work!</h1>
+  <h6> if you want to see the actual picture click one of the pictures to
+    check it out!
+  </h6>
+  <div id="instafeed"></div>
+  <p>
+    What is daisies.art?
+    <br>
+    Daisies.art is an instagram page where a couple of kids from CA create a beautiful
+    and artistic image. Please follow us on instagram and we would be open to any tips
+    and tricks to drawing and creating art!
+  </p>
+</body>
+<script type="text/javascript" src="instafeed.min.js"></script>
+<script type="text/javascript">
+var userFeed = new Instafeed({
+  get: 'user',
+  userId: 1374544968,
+  accessToken: '1374544968.467ede5.f8ff03f775b247e79acdc3a5b0602a8b'
+});
+userFeed.run();
+</script>
+</html>
